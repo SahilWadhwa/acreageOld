@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                >
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="#007500">
+
+                <Button
+                        android:id="@+id/btnContacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:text="  Choose contact  "
+                        android:textSize="22dip"
+                        style="@style/MyButton"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:onClick="onChooseContact"
+                        android:focusable="true"/>
+                <EditText
+                        android:id="@+id/textCustName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Enter Customer Name"
+                        android:textSize="22dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        />
+                <EditText
+                        android:id="@+id/textCustNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        android:hint="Enter Mobile Number"
+                        android:textSize="22dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        />
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:gravity="center_horizontal"
+                              android:background="#007500"
+                              android:weightSum="1.0"
+                        >
+                    <Button
+                            android:id="@+id/btnOkContact"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:text="Ok"
+                            android:textSize="24dp"
+                            style="@style/MyButton"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="0.5"
+                            android:onClick="onOkContact"
+                            />
+                    <Button
+                            android:id="@+id/btnCancelContact"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:text="Cancel"
+                            android:textSize="24dp"
+                            style="@style/MyButton"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:onClick="onCancelContact"
+                            android:layout_weight="0.5"
+                            />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

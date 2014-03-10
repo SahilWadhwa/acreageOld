@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+   <ScrollView     
+    android:id="@+id/scrollView1"     
+    android:layout_width="fill_parent"    
+     android:layout_height="fill_parent"     
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ffff00"
+     android:fillViewport="true"> 
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#007500"
+    >
+	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#007500"
+    >
+    <TextView  
+            android:id="@+id/txtViewTimer" 
+            style="@style/TableContentFont"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+             android:gravity="center"
+             android:textSize="26dp"
+       ></TextView>  
+       <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:gravity="center"
+    android:background="#007500"
+  
+   >
+     <Button
+        android:id="@+id/btnTimerStart"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+     	android:text=" Start Timer " 
+        android:textSize="24dp"
+		style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"         
+       android:layout_centerInParent="true"      
+		android:onClick="onStartTimer"
+    />
+         <Button
+        android:id="@+id/btnTimerStop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+     	android:text=" Stop Timer " 
+        android:textSize="24dp"
+		style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+       android:layout_centerInParent="true"
+       android:onClick="onStopTimer" 
+	/>
+    </RelativeLayout>
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="#007500"
+    android:weightSum="1.0"
+   >
+     <Button
+        android:id="@+id/btnOkTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+     	android:text="Ok" 
+        android:textSize="24dp"
+		style="@style/MyButton"
+		android:enabled="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onOkTime"                
+		android:layout_weight="0.5"
+    />
+         <Button
+        android:id="@+id/btnCancelTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+     	android:text="Cancel" 
+        android:textSize="24dp"
+		style="@style/MyButton" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onCancelTime"
+		android:layout_weight="0.5"
+    />
+		</LinearLayout>   
+            </LinearLayout>
+</LinearLayout>
+ </ScrollView>
+ </LinearLayout>
+

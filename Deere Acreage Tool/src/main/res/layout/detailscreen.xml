@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <ScrollView     
+    android:id="@+id/scrollView1"     
+    android:layout_width="fill_parent"    
+     android:layout_height="fill_parent"     
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ffff00"
+     android:fillViewport="true"> 
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#007500"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+  	android:background="#ffff00"
+  	android:gravity="center_vertical"
+    >
+
+	
+	    <TextView
+	        android:id="@+id/label"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="  Generate Receipt"
+	        android:minHeight="40dp"
+
+	        style="@style/TitleFont"
+	        >
+	    </TextView>
+</LinearLayout>    
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#007500"
+    >
+    <TextView  
+            android:id="@+id/TextViewArea" 
+            style="@style/TableContentFont"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            
+            android:gravity="center"
+            ></TextView>  
+ 		
+          <Spinner
+        android:id="@+id/parameters_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:prompt="@string/operation_prompt"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp" 
+        /><!--
+        <EditText
+        android:id="@+id/textMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" 
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp" 
+        android:hint="Enter Farmer's Mobile Number"
+        />
+        -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:background="#007500"
+    android:weightSum="1.0"
+   >
+        <TextView  
+            android:id="@+id/TextViewOpCost" 
+            android:text="Operation Cost(in Rs.): "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+			  android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp" 
+            android:layout_weight="0.5"
+            />
+            <EditText
+        android:id="@+id/textOperationcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" 
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp" 
+        android:textSize="20dp"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_weight="0.5"
+        />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:gravity="center_horizontal"
+    android:background="#007500"
+    android:weightSum="1.0"
+   >
+     <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+     	android:text="Ok" 
+        android:textSize="24dp"
+		style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"                
+		android:layout_weight="0.5"
+		android:onClick="onAccept"
+    />
+         <Button
+        android:id="@+id/btnReject"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+     	android:text="Cancel" 
+        android:textSize="24dp"
+		style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onReject"
+		android:layout_weight="0.5"
+    />
+      </LinearLayout>
+ <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:gravity="center_horizontal"
+    android:background="#007500"
+    android:weightSum="1.0"
+   >
+    <Button
+        android:id="@+id/btnSms"
+         android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Send SMS"  
+   		android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp" 
+        android:textSize="22dip"
+        style="@style/MyButton"
+        android:layout_weight="0.5"
+        android:onClick="onSendSms"/>
+        </LinearLayout>
+-->
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

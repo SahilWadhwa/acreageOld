@@ -1,7 +1,79 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.deere.acreage.HomeActivity"
-    tools:ignore="MergeRootFrame" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical"
+                >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:background="#007500"
+                    >
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:background="#007500"
+                                android:weightSum="1.0"
+                        >
+
+                    <Button
+                            android:id="@+id/btnStart"
+                            android:layout_width="200dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:text="Area Based"
+                            android:textSize="26dip"
+                            style="@style/MyButton"
+                            android:layout_marginTop="50dp"
+                            android:layout_weight="0.5"
+                            android:onClick="onAreaBased"/>
+
+                    <Button
+                            android:id="@+id/btnStop"
+                            android:layout_width="200dp"
+                            android:layout_height="80dp"
+                            android:text="Time Based"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="150dp"
+                            android:textSize="26dip"
+                            android:layout_weight="0.5"
+                            style="@style/MyButton"
+                            android:onClick="onTimeBased"/>
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#007500"
+                        >
+
+                    <Button
+                            android:id="@+id/btnSettings"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/settingicon4"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

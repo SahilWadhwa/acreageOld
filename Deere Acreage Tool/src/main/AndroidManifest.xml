@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.deere.acreage" >
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -15,6 +25,48 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.deere.acreage.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.ContactsActivity"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.ShowAreaActivity"
+            android:label="Calculated Area"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.CalculateAreaActivity"
+            android:label="Calculate Area"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.DetailsActivity"
+            android:label="Generate Receipt"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.ReceiptActivity"
+            android:label="Receipt"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.ImagePrintActivity"
+            android:label="Print"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.TimeBasedActivity"
+            android:label="Timer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deere.acreage.AcreageOptionActivity"
+            android:label="@string/title_activity_acreage_option" >
         </activity>
     </application>
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/connection_screen_layout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_height="fill_parent"
+	android:scrollbars="vertical"
+>
+
+<ScrollView     
+    android:id="@+id/scrollView1"     
+    android:layout_width="fill_parent"    
+     android:layout_height="fill_parent"     
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:fillViewport="true"> 
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#007500"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+  	android:background="#ffff00"
+  	android:gravity="center_vertical"
+    >
+
+	
+	    <TextView
+	        android:id="@+id/label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Print Receipt"
+	        android:minHeight="40dp"
+	        android:gravity="center"
+	        style="@style/TitleFont"
+	        >
+	    </TextView>
+</LinearLayout>    
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#007500">
+		<TextView
+			android:id="@+id/macAddressText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20.0sp"
+			android:text="MAC Address:"
+			android:layout_weight="1" />
+		<EditText
+			android:id="@+id/macInput"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:enabled="true"
+			android:inputType="textNoSuggestions|text"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="#007500"
+    >
+ <Button        
+ 	android:id="@+id/button_confirm"        
+ 	android:layout_width="wrap_content"        
+ 	android:layout_height="wrap_content"        
+ 	android:padding="10dp"       
+ 	android:text="Print"
+ 	android:layout_gravity="center_vertical|center_horizontal"        
+ 	android:layout_centerInParent="true"
+ 	android:textSize="22dip"
+     style="@style/MyButton"
+    android:textStyle="bold"
+ 	android:onClick="onConfirm"/>
+
+</RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

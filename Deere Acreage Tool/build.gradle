@@ -8,6 +8,11 @@ buildscript {
 }
 apply plugin: 'android'
 
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile fileTree('../ZSDK_API.jar')
+}
+
 repositories {
     mavenCentral()
 }
