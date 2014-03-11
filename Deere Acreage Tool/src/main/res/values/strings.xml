@@ -10,7 +10,7 @@
     </style>
 
     <string name="hello">Hello World, LoginScreen!</string>
-               <style name="ItemFont" parent="@android:style/TextAppearance.Medium">
+                   <style name="ItemFont" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">#FFFF00</item>
         <item name="android:textSize">22sp</item>
         <item name="android:typeface">sans</item>
@@ -65,5 +65,6 @@
     <string name="title_activity_settings">settings</string>
     <string name="title_activity_contacts">ContactsActivity</string>
     <string name="title_activity_acreage_option">Options to cover field</string>
+    <string name="title_activity_mark_on_maps">MarkOnMaps</string>
 
 </resources>

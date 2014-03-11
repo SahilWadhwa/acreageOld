@@ -4,6 +4,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.7.+'
+//        compile 'com.google.android.gms:play-services:4.0.30'
+
     }
 }
 apply plugin: 'android'

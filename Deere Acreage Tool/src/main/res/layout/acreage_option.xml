@@ -1,7 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.deere.acreage.AcreageOptionActivity"
-    tools:ignore="MergeRootFrame" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical"
+                >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:background="#007500"
+                    >
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_horizontal"
+                                android:background="#007500"
+                                android:weightSum="1.0"
+                        >
+
+                    <Button
+                            android:id="@+id/btnmaps"
+                            android:layout_width="300dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:text="Draw field boundary on map"
+                            android:textSize="26dip"
+                            style="@style/MyButton"
+                            android:layout_marginTop="50dp"
+                            android:layout_weight="0.5"
+                            android:onClick="markOnMap"/>
+
+                    <Button
+                            android:id="@+id/btnWalk"
+                            android:layout_width="300dp"
+                            android:layout_height="80dp"
+                            android:text="Walk around the field boundary"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="150dp"
+                            android:textSize="26dip"
+                            android:layout_weight="0.5"
+                            style="@style/MyButton"
+                            android:onClick="walkOnBoundary"/>
+                    <Button
+                            android:id="@+id/btnTimeBased"
+                            android:layout_width="300dp"
+                            android:layout_height="80dp"
+                            android:text="Time Based"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="250dp"
+                            android:textSize="26dip"
+                            android:layout_weight="0.5"
+                            style="@style/MyButton"
+                            android:onClick="timeBased"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -109,12 +109,12 @@ public class SettingsActivity extends Activity {
         Toast.makeText(getApplicationContext(),"Changes Saved Successfully!",
                 Toast.LENGTH_LONG).show();
 
-        Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+        Intent intent = new Intent(SettingsActivity.this, ContactsActivity.class);
         startActivity(intent);
     }
     public void onCancelSettings(View view)
     {
-        Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+        Intent intent = new Intent(SettingsActivity.this, ContactsActivity.class);
         startActivity(intent);
     }
     @Override
