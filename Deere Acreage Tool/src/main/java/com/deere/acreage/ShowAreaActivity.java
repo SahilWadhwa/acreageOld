@@ -88,7 +88,7 @@ public class ShowAreaActivity extends Activity {
 					public void onClick(DialogInterface dialog,int id) {
 						// if this button is clicked, close
 						// current activity
-						Intent intent = new Intent(ShowAreaActivity.this, HomeActivity.class);
+						Intent intent = new Intent(ShowAreaActivity.this, ContactsActivity.class);
 						startActivity(intent);
 					}
 				  })

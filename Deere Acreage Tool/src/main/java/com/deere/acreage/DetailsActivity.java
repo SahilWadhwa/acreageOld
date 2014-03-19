@@ -193,7 +193,7 @@ public class DetailsActivity extends Activity {
 				.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,int id) {
 				
-						Intent intent = new Intent(DetailsActivity.this, HomeActivity.class);
+						Intent intent = new Intent(DetailsActivity.this, ContactsActivity.class);
 						startActivity(intent);
 					}
 				  })

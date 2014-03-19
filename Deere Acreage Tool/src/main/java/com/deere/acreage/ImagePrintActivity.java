@@ -135,7 +135,7 @@ public class ImagePrintActivity extends Activity {
 	 printPhotoFromExternal(BitmapFactory.decodeFile(new File(Environment.getExternalStorageDirectory() + "/gaandhireceipt.png").getAbsolutePath()));
 	// file.delete();
 	 
-	 Intent myIntent = new Intent(ImagePrintActivity.this, HomeActivity.class);
+	 Intent myIntent = new Intent(ImagePrintActivity.this, ContactsActivity.class);
 	 ImagePrintActivity.this.startActivity(myIntent);
  }
  
